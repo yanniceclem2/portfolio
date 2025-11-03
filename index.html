@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Professionnel</title>
+    <meta name="description" content="Portfolio professionnel développeur web - Compétences, projets et expériences">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="min-h-screen bg-white text-gray-800 font-sans">
+    <!-- Navigation Sticky -->
+    <nav class="nav-sticky">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">MonPortfolio</div>
+                <div class="nav-links">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                    <a href="#competences" class="nav-link">Compétences</a>
+                    <a href="#projets" class="nav-link">Projets</a>
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                    <a href="#veille" class="nav-link">Veille</a>
+                    <a href="#experience" class="nav-link">Expérience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page d'Accueil -->
+    <section id="accueil" class="section-hero">
+        <div class="container">
+            <div class="hero-content">
+                <img 
+                    src="https://picsum.photos/200?random=1" 
+                    alt="Photo de profil" 
+                    class="profile-image"
+                    loading="lazy"
+                />
+                <h1 class="hero-title">Yannice CLEMENCIN</h1>
+                <h2 class="hero-subtitle">Étudiant BTS SIO SLAM</h2>
+                <div class="hero-buttons">
+                    <a href="https://github.com/yanniceclem" class="btn btn-primary">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                    <a href="mailto:clemencinyannice@gmail.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope mr-2"></i>Email
+                    </a>
+                </div>
+                
+                <!-- À propos -->
+                <div class="about-card">
+                    <h3 class="about-title">À propos de moi</h3>
+                    <p class="about-text">
+                        Je suis étudiant en BTS SIO option SLAM au Lycée Simone Weil.
+                        Passionné par le développement web et les technologies modernes, 
+                        je conçois des applications en PHP, JavaScript et MySQL, dans une logique MVC. 
+                        Curieux et motivé, j’aime créer des solutions efficaces et intuitives alliant performance et expérience utilisateur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section-skills">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            
+            <div class="skills-grid">
+                <!-- Langages -->
+                <div class="skill-category">
+                    <h3 class="skill-title">Langages</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <i class="fab fa-js skill-icon js"></i>
+                            <span>JavaScript</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-python skill-icon python"></i>
+                            <span>Python</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-html5 skill-icon html"></i>
+                            <span>HTML5</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-css3-alt skill-icon css"></i>
+                            <span>CSS3</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-php skill-icon php"></i>
+
+                            <span>PHP</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class=""></i>
+
+                            <span>SQL</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category">
+                    <h3 class="skill-title">Frameworks</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <i class="fab fa-react skill-icon react"></i>
+                            <span>Laravel 10+</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-vuejs skill-icon vue"></i>
+                            <span>Alpine.js
+</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-node-js skill-icon node"></i>
+                            <span>Blade</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-bolt skill-icon express"></i>
+                            <span>Tailwind CSS</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Outils -->
+                <div class="skill-category">
+                    <h3 class="skill-title">Outils</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <i class="fab fa-git-alt skill-icon git"></i>
+                            <span>Git / GitHub</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-docker skill-icon docker"></i>
+                            <span>Docker</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-figma skill-icon figma"></i>
+                            <span>Figma</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-database skill-icon mysql"></i>
+                            <span>SQLite / MySQL</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-database skill-icon mysql"></i>
+                            <span>Composer</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-database skill-icon mysql"></i>
+                            <span>Postman / Insomnia</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Méthodologies -->
+                <div class="skill-category">
+                    <h3 class="skill-title">Méthodologies</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <i class="fas fa-sync-alt skill-icon agile"></i>
+                            <span>Gestion de projet Agile</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-code-branch skill-icon gitflow"></i>
+                            <span>Architecture MVC</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-mobile-alt skill-icon mobile"></i>
+                            <span>REST API</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-users skill-icon pair"></i>
+                            <span>UX/UI Design</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-users skill-icon pair"></i>
+                            <span>Veille technologique</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section-projects">
+        <div class="container">
+            <h2 class="section-title">Projets Réalisés</h2>
+            
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-name">Application E-commerce</h3>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <div class="project-type">
+                        <span class="project-tag fullstack">Full Stack</span>
+                    </div>
+                    <p class="project-description">
+                        Développement d'une plateforme e-commerce complète avec système de paiement et gestion de stock.
+                    </p>
+                    <div class="project-section">
+                        <h4 class="project-section-title">Objectifs :</h4>
+                        <p class="project-section-text">Créer une solution e-commerce scalable avec une expérience utilisateur optimale.</p>
+                    </div>
+                    <div class="project-section">
+                        <h4 class="project-section-title">Technologies :</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                    <div class="project-section">
+                        <h4 class="project-section-title">Fonctionnalités :</h4>
+                        <ul class="feature-list">
+                            <li>Panier d'achat</li>
+                            <li>Paiement sécurisé</li>
+                            <li>Gestion des utilisateurs</li>
+                            <li>Interface admin</li>
+                        </ul>
+                    </div>
+                    <div class="project-section">
+                        <h4 class="project-section-title">Apprentissages :</h4>
+                        <p class="project-section-text">Architecture microservices, sécurité des paiements, optimisation des performances.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Code Source</a>
+                        <a href="#" class="project-link">Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-name">Application Météo</h3>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <div class="project-type">
+                        <span class="project-tag frontend">Frontend</span>
+                    </div>
+                    <p class="project-description">
+                        Application web responsive pour consulter les prévisions météo avec interface intuitive.
+                    </p>
+                    <div class="project-section">
+                        <h4 class="project-section-title">Objectifs :</h4>
+                        <p class="project-section-text">Créer une application météo performante avec design moderne et données en temps réel.</p>
+                    </div>
+                    <div class="project-section">
+                        <h4 class="project-section-title">Technologies :</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">API REST</span>
+                        </div>
+                    </div>
+                    <div class="project-section">
+                        <h4 class="project-section-title">Fonctionnalités :</h4>
+                        <ul class="feature-list">
+                            <li>Recherche par ville</li>
+                            <li>Prévisions 7 jours</li>
+                            <li>Géolocalisation</li>
+                            <li>Mode sombre</li>
+                        </ul>
+                    </div>
+                    <div class="project-section">
+                        <h4 class="project-section-title">Apprentissages :</h4>
+                        <p class="project-section-text">Intégration d'API, gestion d'état avec Vuex, design responsive avancé.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Code Source</a>
+                        <a href="#" class="project-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certifications -->
+    <section id="certifications" class="section-certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            
+            <div class="certifications-grid">
+                <!-- Certification 1 -->
+                <div class="certification-card">
+                    <h3 class="certification-name">AWS Certified Developer</h3>
+                    <div class="certification-date">
+                        <i class="far fa-calendar-alt mr-2"></i>Janvier 2024
+                    </div>
+                    <div class="certification-org">
+                        <i class="fas fa-building mr-2"></i>Amazon Web Services
+                    </div>
+                    <div class="certification-skills">
+                        <h4 class="skills-title">Compétences validées :</h4>
+                        <ul class="skills-list">
+                            <li>Développement d'applications cloud</li>
+                            <li>Architecture serverless</li>
+                            <li>Services AWS (Lambda, API Gateway)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="certification-card">
+                    <h3 class="certification-name">Google Cloud Associate</h3>
+                    <div class="certification-date">
+                        <i class="far fa-calendar-alt mr-2"></i>Mars 2023
+                    </div>
+                    <div class="certification-org">
+                        <i class="fas fa-building mr-2"></i>Google Cloud
+                    </div>
+                    <div class="certification-skills">
+                        <h4 class="skills-title">Compétences validées :</h4>
+                        <ul class="skills-list">
+                            <li>Infrastructure GCP</li>
+                            <li>Déploiement d'applications</li>
+                            <li>Gestion des données</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="certification-card">
+                    <h3 class="certification-name">Scrum Master Certified</h3>
+                    <div class="certification-date">
+                        <i class="far fa-calendar-alt mr-2"></i>Novembre 2022
+                    </div>
+                    <div class="certification-org">
+                        <i class="fas fa-building mr-2"></i>Scrum Alliance
+                    </div>
+                    <div class="certification-skills">
+                        <h4 class="skills-title">Compétences validées :</h4>
+                        <ul class="skills-list">
+                            <li>Méthodologie Agile</li>
+                            <li>Gestion de projet Scrum</li>
+                            <li>Facilitation d'équipe</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Veille Technologique -->
+    <section id="veille" class="section-tech-watch">
+        <div class="container">
+            <h2 class="section-title">Veille Technologique</h2>
+            
+            <!-- <div class="articles-grid">s
+                 Article 1 
+                <div class="article-card">
+                    <div class="article-header">
+                        <img 
+                            src="https://picsum.photos/60?random=2" 
+                            alt="Article image" 
+                            class="article-image"
+                            loading="lazy"
+                        />
+                        <div>
+                            <h3 class="article-title"></h3>
+                            <p class="article-date"></p>
+                        </div>
+                    </div>
+                    <p class="article-description">
+                        
+                    </p>
+                    <div class="article-tags">
+                        <span class="article-tag blockchain">Blockchain</span>
+                        <span class="article-tag web3">Web3</span>
+                        <span class="article-tag dapps">DApps</span>
+                    </div>
+                    <a href="#" class="article-link">Lire l'article →</a>
+                </div>
+
+                 Article 2 
+                <div class="article-card">
+                    <div class="article-header">
+                        <img 
+                            src="https://picsum.photos/60?random=3" 
+                            alt="Article image" 
+                            class="article-image"
+                            loading="lazy"
+                        />
+                        <div>
+                            <h3 class="article-title"></h3>
+                            <p class="article-date"></p>
+                        </div>
+                    </div>
+                    <p class="article-description">
+                        
+                    </p>
+                    <div class="article-tags">
+                        <span class="article-tag ai">IA</span>
+                        <span class="article-tag productivity">Productivité</span>
+                        <span class="article-tag tools">Outils</span>
+                    </div>
+                    <a href="#" class="article-link">Lire l'article →</a>
+                </div>
+            </div>  -->
+        </div>
+    </section>
+
+    <!-- Section Expérience -->
+    <section id="experience" class="section-experience">
+        <div class="container">
+            <h2 class="section-title">Expérience Professionnelle</h2>
+            
+            <div class="experiences-list">
+                <!-- Expérience 1 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <span class="experience-type apprenticeship">Stage</span>
+                            <h3 class="experience-position">Développeur/chef de projet</h3>
+                            <p class="experience-company">DSIN Métropole de saint-Étienne</p>
+                        </div>
+                        <div class="experience-period">
+                            <i class="far fa-calendar-alt mr-2"></i>  - 26 mai 2025 au 28 juin 2025
+                        </div>
+                    </div>
+                    
+                    <div class="experience-section">
+                        <h4 class="experience-section-title">Missions réalisées :</h4>
+                        <ul class="experience-list">
+                            <li>Maintenance de Sites Web avec Wordpress</li>
+                            <li>chefferie de projet : Gestion d'Équipements Sportifs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-section">
+                        <h4 class="experience-section-title">Technologies utilisées :</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Wordpress</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-section">
+                        <h4 class="experience-section-title">Compétences développées :</h4>
+                        <ul class="experience-list">
+                            <li>Maîtrise de WordPress CMS</li>
+                            <li>HTML/CSS Appliqué</li>
+                            <li>Gestion de Projet</li>
+                            <li>Travail en équipe </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- <div class="experience-section">
+                        <h4 class="experience-section-title">Réalisations :</h4>
+                        <p class="experience-achievement"></p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact-grid">
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Restons en contact</h3>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Email :</p>
+                                <p class="contact-value">clemencinyannice@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">GitHub</p>
+                                <a href="https://github.com/yanniceclem" class="contact-value">GitHub/yanniceclem</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">LinkedIn</p>
+                                <p class="contact-value">linkedin.com/in/username</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="availability-card">
+                        <h4 class="availability-title">Disponibilité</h4>
+                        <p class="availability-text">
+                            Je suis actuellement ouvert aux nouvelles opportunités de collaboration et de recrutement.
+                        </p>
+                        <div class="availability-buttons">
+                            <a href="#" class="btn btn-primary">Télécharger CV</a>
+                            <a href="mailto:contact@example.com" class="btn btn-outline">Me contacter</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulaire de contact -->
+                <div class="contact-form-container">
+                    <h3 class="contact-subtitle">Envoyez un message</h3>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nom complet</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name"
+                                class="form-input"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email"
+                                class="form-input"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Sujet</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject"
+                                class="form-input"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message"
+                                rows="5"
+                                class="form-textarea"
+                                required
+                            ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">Jean Dupont</p>
+                    <p class="footer-title">Développeur Full Stack</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Jean Dupont. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
