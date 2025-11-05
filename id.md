@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <base target="_self">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Yannice CLEMENCIN — Portfolio</title>
@@ -10,22 +9,16 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome via jsDelivr (fallback CDN) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
-    <style>
-      /* Quelques utilitaires légers venant du modèle HTML.md */
-      html { scroll-behavior: smooth; }
-      .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
-    </style>
   </head>
   <body>
-    <!-- Navigation (inspirée de HTML.md) -->
+    <!-- Header / Navigation -->
     <nav class="nav-sticky">
       <div class="container">
         <div class="nav-container">
           <div class="logo">Yannice CLEMENCIN</div>
-
-          <!-- desktop links (will be shown on larger screens via CSS) -->
           <div class="nav-links" id="mainNavLinks">
             <a href="#accueil" class="nav-link">Accueil</a>
+            <a href="#a-propos" class="nav-link">À propos</a>
             <a href="#competences" class="nav-link">Compétences</a>
             <a href="#projets" class="nav-link">Projets</a>
             <a href="#certifications" class="nav-link">Certifications</a>
@@ -34,16 +27,19 @@
             <a href="#contact" class="nav-link">Contact</a>
           </div>
 
-          <!-- mobile button -->
           <button class="mobile-menu-btn" aria-expanded="false" aria-label="Ouvrir le menu">
-            <i class="fas fa-bars" aria-hidden="true"></i>
+            <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect y="4" width="24" height="2" rx="1"></rect>
+              <rect y="11" width="24" height="2" rx="1"></rect>
+              <rect y="18" width="24" height="2" rx="1"></rect>
+            </svg>
             <span class="mobile-menu-label">Menu</span>
           </button>
         </div>
       </div>
     </nav>
 
-    <div id="navOverlay" class="nav-overlay" aria-hidden="true"></div>
+    <div id="navOverlay" class="nav-overlay hidden" aria-hidden="true"></div>
 
     <!-- Hero / Accueil -->
     <header id="accueil" class="section-hero">
@@ -93,20 +89,12 @@
           </div>
 
           <div class="skill-category">
-            <h3 class="skill-title">Outils</h3>
+            <h3 class="skill-title">Outils & Méthodes</h3>
             <ul class="skill-list">
               <li class="skill-item"><i class="fab fa-git-alt skill-icon git"></i><span>Git / GitHub</span></li>
               <li class="skill-item"><i class="fas fa-box skill-icon composer"></i><span>Composer</span></li>
               <li class="skill-item"><i class="fab fa-docker skill-icon docker"></i><span>Docker (débutant)</span></li>
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="skill-title">Méthodes</h3>
-            <ul class="skill-list">
-              <li class="skill-item"><i class="fas fa-project-diagram skill-icon agile"></i><span>Méthodologies Agile</span></li>
-              <li class="skill-item"><i class="fas fa-code-branch skill-icon mvc"></i><span>Architecture MVC</span></li>
-              <li class="skill-item"><i class="fas fa-network-wired skill-icon rest"></i><span>Conception REST / API</span></li>
+              <li class="skill-item"><i class="fas fa-project-diagram skill-icon agile"></i><span>Méthodologies Agile, MVC, REST</span></li>
             </ul>
           </div>
         </div>
